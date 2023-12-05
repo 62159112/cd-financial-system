@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "563700",
+      "name": "计划",
+      "font_class": "jihua",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "1964088",
+      "name": "报表统计",
+      "font_class": "baobiaotongji",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3703058",
+      "name": "网购订单管理",
+      "font_class": "navicon-wgddgl",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "6789071",
+      "name": "采购管理",
+      "font_class": "caigouguanli-",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "10933917",
+      "name": "同步",
+      "font_class": "tongbu",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "10941363",
+      "name": "offer",
+      "font_class": "offer",
+      "unicode": "e972",
+      "unicode_decimal": 59762
+    },
+    {
+      "icon_id": "12875273",
+      "name": "仓库管理",
+      "font_class": "cangkuguanli",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "16405797",
+      "name": "工单管理",
+      "font_class": "gongdanguanli",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "27090940",
+      "name": "生产成本核算",
+      "font_class": "budget",
+      "unicode": "e527",
+      "unicode_decimal": 58663
+    }
+  ]
+}

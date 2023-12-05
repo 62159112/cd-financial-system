@@ -1,0 +1,981 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+<!--<![endif]-->
+<!-- Begin Head -->
+<head>
+    <title>SplashDash</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    <link rel="stylesheet" type="text/css" href="static/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href="static/font/font_0mienbyc1ov/iconfont.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" id="theme-change" type="text/css" href="">-->
+</head>
+
+<body>
+    <style>
+        .ui_class {
+            padding: 0 5px 0 5px;
+        }
+
+            .ui_class li input {
+                width: 250px;
+                background-color: #ffc;
+            }
+
+            .ui_class li {
+                float: left;
+                display: block;
+                margin: 0 0 35px 20px;
+                height: 30px;
+                width: 250px;
+            }
+    </style>
+    <div class="loader">
+        <div class="spinner">
+            <img src="static/picture/loader.gif" alt="">
+        </div>
+    </div>
+    <!-- Main Body -->
+    <div class="page-wrapper">
+        <header class="header-wrapper main-header">
+            <div class="header-inner-wrapper">
+                <div class="logo-wrapper" style="background:repeating-linear-gradient(45deg, #000000, transparent 100px)">
+                    <a href="index.html" class="admin-logo">
+                        <img src="static/picture/tws_70.png" alt="">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="serch-wrapper">
+                        <form>
+                            <input type="text" placeholder="输入关键词模糊搜索...">
+                        </form>
+                        <a class="search-close" href="javascript:void(0);"><span class="icofont-close-line"></span></a>
+                    </div>
+                    <div class="header-left">
+                        <div class="header-links">
+                            <a href="javascript:void(0);" class="toggle-btn">
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="header-links search-link">
+                            <a class="search-toggle" href="javascript:void(0);">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+                                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                    s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-controls">
+                        <div class="setting-wrapper header-links">
+                            <a href="javascript:void(0);" class="setting-info">
+                                <span class="header-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16">
+                                        <path d="M7 0h2v3h-2v-3z"></path>
+                                        <path d="M6 4v3h1v9h2v-9h1v-3z"></path>
+                                        <path d="M2 0h2v8h-2v-8z"></path>
+                                        <path d="M1 9v3h1v4h2v-4h1v-3z"></path>
+                                        <path d="M12 0h2v10h-2v-10z"></path>
+                                        <path d="M11 11v3h1v2h2v-2h1v-3z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="notification-wrapper header-links">
+                            <a href="javascript:void(0);" class="notification-info">
+                                <span class="header-icon">
+                                    <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m450.201 407.453c-1.505-.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.511 0-.193-.004-.384-.011-.576-.227-58.589-35.31-109.095-85.514-131.756v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.334 0 44.331-4.372 106.428-25.201 150.511-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.947c.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.947c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.502-350.417c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.915c-25.673 0-46.614-20.617-47.223-46.188h94.445c-.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239c-.003 0-213.385 0-213.385 0 2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.889 0-63.417 51.509-115.01 114.821-115.01s114.821 51.593 114.821 115.06c0 .185.003.369.01.553.057 71.472 10.25 127.755 30.298 167.286 2.625 5.176 5.267 9.754 7.861 13.798z"></path></svg>
+                                </span>
+                                <span class="count-notification"></span>
+                            </a>
+                            <div class="recent-notification">
+                                <div class="drop-down-header">
+                                    <h4>All Notification</h4>
+                                    <p>You have 6 new notifications</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h5><i class="fas fa-exclamation-circle mr-2"></i>Storage Full</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h5><i class="far fa-envelope mr-2"></i>New Membership</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="drop-down-footer">
+                                    <a href="javascript:void(0);" class="btn sm-btn">
+                                        View All
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-info-wrapper header-links">
+                            <a href="javascript:void(0);" class="user-info">
+                                <img src="static/picture/user.jpg" alt="" class="user-img">
+                                <div class="blink-animation">
+                                    <span class="blink-circle"></span>
+                                    <span class="main-circle"></span>
+                                </div>
+                            </a>
+                            <div class="user-info-box">
+                                <div class="drop-down-header">
+                                    <h4>John Brown</h4>
+                                    <p>UI | UX Designer</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="far fa-edit"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="setting.html">
+                                            <i class="fas fa-cog"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fas fa-sign-out-alt"></i> logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Sidebar Start -->
+        <aside class="sidebar-wrapper">
+            <div class="side-menu-wrap">
+                <ul class="main-menu">
+                    <li>
+                        <a href="javascript:void(0);" class="active">
+                            <span class="icon-menu feather-icon">
+                            </span>
+                            <span class="menu-text">
+                                控制面板
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="index.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text user_nm">
+                                        Admin
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        User
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-jihua"></i>
+                            </span>
+                            <span class="menu-text">
+                                计划管理
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="orders_wait.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        待排产销售订单
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="orders_already.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        已排产销售订单
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-gongdanguanli"></i>
+                            </span>
+                            <span class="menu-text">
+                                工单管理
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="work_abnormal_zzp.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        完全入库异常在制品
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="work_recount_select.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        异常在制品一键重算
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="work_return_of_material.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        本月需退料工单
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="work_days60_30.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        60、30天未结案的工单
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-offer"></i>
+                            </span>
+                            <span class="menu-text">
+                                单价系统
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="price_trade.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        关联源单单价表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="price_buy.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        采购单价表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="price_sell.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        销售单价表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="price_write_off.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        财务核销单价表
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-tongbu"></i>
+                            </span>
+                            <span class="menu-text">
+                                同步系统
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="sync_material.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        花溪物料同步
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-cangkuguanli"></i>
+                            </span>
+                            <span class="menu-text">
+                                仓存管理
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="stock_JIT.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        即时库存综合查询
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="count_sheet.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        产线盘点表
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-navicon-wgddgl"></i>
+                            </span>
+                            <span class="menu-text">
+                                订单管理
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="order.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        订单时效表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order_key.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        订单键值对重复修正
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-caigouguanli-"></i>
+                            </span>
+                            <span class="menu-text">
+                                采购管理
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="pricing.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        采购核价
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pricing_report.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        核价报表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="monthly_statistic.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        回料统计（供应商）
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="monthly_bom.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        回料统计（物料）
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cover_plate_count.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        自制盖板统计
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-budget"></i>
+                            </span>
+                            <span class="menu-text">
+                                成本核算
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="costing_obj_lld.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        无成本对象领料单
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="costing_obj_icmo.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        无成本对象工单
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+
+                                <a href="costing_shortNumber.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        自制核算数据修正
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <i class="iconfont icon-baobiaotongji"></i>
+                            </span>
+                            <span class="menu-text">
+                                报表统计
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="fsupply_hl.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        供应商评分汇总表
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mes_quality.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        品质报表
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+        <!-- Container Start -->
+        <div class="page-wrapper">
+            <div class="main-content">
+                <!-- Page Title Start -->
+                <div class="row">
+                    <div class="colxl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:-20px">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-box ad-title-box-use">
+                                <h4 class="page-title" style="text-align:center">BOM核价</h4>
+                                <div class="Function_buttons" style="float:right;margin-top:-30px;padding:10px">
+                                    <button type="button" class="add" data-toggle="modal" data-target="#longc-3" style="border:none;border-color:#41C163;border-radius:10px">新增替料</button>&emsp;
+                                    <button type="button" class="del" data-toggle="modal" style="border:none;border-color:#41C163;border-radius:10px">替料删除</button>&emsp;
+                                    <button class="add_save" type="button" style="border:none;border-color:#41C163;border-radius:10px">保存并新增</button>&emsp;
+                                    <button class="to_examine" type="button" style="border:none;border-color:#FFFFFF;border-radius:10px">审 核</button>&emsp;
+                                    <button class="to_examine_back" type="button" style="border:none;border-color:#FFFFFF;border-radius:10px">反审核</button>
+                                </div>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:-20px">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                <label for="dropdown">接单公司</label>&emsp;
+                                <select id="dropdown" style="width:180px">
+                                    <option value="HX">花溪</option>
+                                    <!--<option value="2">贵州</option>
+                        <option value="3">深圳</option>-->
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="form-group">
+                                    &emsp;&emsp;<label for="dropdown">单号</label>&emsp;
+                                    <input type="text" readonly="readonly" style="width:180px;background-color:#D0CCD0" class="odd_numbers FBillNo">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="form-group">
+                                    &emsp;&emsp;<label for="dropdown">客户</label>&emsp;
+                                    <input type="text" readonly="readonly" id="custom" placeholder="请选择客户" style="width:180px;background-color:#d0ccd0" class="organization FCustName">
+                                    <button type="button" class="btn btn-primary squer-btn btn_organization_search" data-toggle="modal" data-target="#longc" style="width:50px;height:30px;padding:0">查询</button>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                <label for="dropdown">类型</label>&emsp;
+                                <select id="dropdown" style="width:180px" class="FTypeName">
+                                    <option value="">空</option>
+                                    <option value="2">消费</option>
+                                    <option value="1">工控</option>
+                                    <option value="0">大屏</option>
+                                    <option value="3">其他</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    &emsp;<label for="dropdown">订单号</label>&emsp;
+                                    <input type="text" id="Number" placeholder="" style="width:180px;background-color:#d0ccd0" readonly="readonly" class="FOrderNo">
+                                    <button type="button" class="btn btn-primary squer-btn Btn_SEorder_Sel_all" data-toggle="modal" data-target="#longc-1" style="width:50px;height:30px;padding:0">查询</button>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">成品代码</label>&emsp;
+                                    <input type="text" placeholder="" id="code" style="width:180px;background-color:#d0ccd0" class="number_search FProductNumber" readonly="readonly">
+                                    <button type="button" class="btn btn-primary squer-btn btn_SEorder_number_search" data-toggle="modal" data-target="#longc-2" style="width:50px;height:30px;padding:0">查询</button>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">成品名称</label>&emsp;
+                                    <input type="text" placeholder="" id="product_name" style="width:180px" class="product-name FProductName">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px;margin-left:-28px">
+                                <div class="form-group">
+                                    <label for="dropdown">规格型号</label>&emsp;
+                                    <input type="text" placeholder="" id="Specification" style="width:180px;" class="product-type FModel">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    &emsp;&emsp;<label for="dropdown">日期</label>&emsp;
+                                    <input type="date" placeholder="" id="data1" style="width:180px" class="FDate">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <label for="dropdown">产品结构</label>&emsp;
+                                <select id="dropdown" style="width:180px" class="FProStructureName">
+                                    <option value="">空</option>
+                                    <option value="0">不含模组</option>
+                                    <option value="1">含模组</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">订单数量</label>&emsp;
+                                    <input type="text" placeholder="" id="amount" style="width:180px" class="FQty">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px;margin-left:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">良率%</label>&emsp;
+                                    <input type="text" placeholder="" style="width:180px" class="txt_Quality FYield">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">设计制费</label>&emsp;
+                                    <input type="text" placeholder="0.0000" style="width:180px" class="FStandardManuFee">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown">设计人工</label>&emsp;
+                                    <input type="text" placeholder="0.0000" style="width:180px" class="FStandardLabourFee">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px;margin-left:-10px">
+                                <div class="form-group">
+                                    <label for="dropdown" style="width:80px;height:50px">BOM占比%</label>
+                                    <input type="text" placeholder="0.00" style="width:180px" class="FBOMRate">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-10px;margin-left:-15px">
+                                <div class="form-group">
+                                    <label for="dropdown">未税售价</label>&emsp;
+                                    <input type="text" placeholder="" id="price" style="width:180px" class="FAuxPrice">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="margin-top:-30px">
+                                <div class="form-group">
+                                    &emsp;&emsp;<label for="dropdown">备注</label>&emsp;
+                                    <input type="text" placeholder="" style="width:180px" class="FRemark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Table Start -->
+                <div class="row" style="overflow:hidden;">
+                    <!-- Styled Table Card-->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card table-card">
+                            <div class="card-body">
+                                <div class="chart-holder">
+                                    <div class="table-responsive">
+                                        <table class="table mb-0" style="font-size:10px">
+                                            <thead>
+                                                <tr style="text-align:center">
+                                                    <th>选择物料</th>
+                                                    <th>物料属性</th>
+                                                    <th>物料编码</th>
+                                                    <th>物料名称</th>
+                                                    <th>规格型号</th>
+                                                    <th>单位用量</th>
+                                                    <th>良率%</th>
+                                                    <th>最新价格</th>
+                                                    <th>税率%</th>
+                                                    <th>含税单价</th>
+                                                    <th>确认材料成本</th>
+                                                    <th>备注</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="stock_body1 bom-body" style="font-size:10px;text-align:center;"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <hr />
+                    <p style="display:block;margin-left:80%;">合计：<input type="text" readonly id="summation" /></p>
+                    <hr />
+                </div>
+
+
+                <div style="background-color:hotpink;padding:20px">
+                    <br /><br />
+                    <h5>DES加密测试</h5>
+                    <input type="text" class="sadhnzxcn" /><button id="asnkkh">开始加密</button><br /><br />
+                    加密结果：<input type="text" class="xcbva" style="width:350px" /><br />
+                    <br />
+                    <button id="acgqwe">解密</button>
+                    解密结果：<input type="text" class="asdcwe" style="width:350px" />
+                </div>
+
+                <div>
+                    制单人：<input type="text" readonly placeholder="超级管理员" class="FCreatorName" /> &emsp; &emsp;
+                    制单日期：<input type="date" />&emsp; &emsp;
+                    审核人：<input type="text" /> &emsp; &emsp;
+                    审核日期：<input type="date" /> &emsp; &emsp;
+                </div>
+                <div class="ad-footer-btm">
+                    <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        tr, td {
+            border: 1px dashed #d0ccd0;
+            
+        }
+    </style>
+    <!--选择客户的模态框-->
+    <div class="modal fade" id="longc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="margin-top:100px;width:100%;height:100%">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="width:1200px;height:800px;margin-left:-200px">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalCenterTitle2">选择客户</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="margin-top:-10px;border:2px solid #DDDDDD;overflow:scroll">
+                    <div style="margin-bottom:15px">
+                        <input type="text" style="width:180px;height:35px" class="organization_string" />
+                        <button type="submit" style="border:none;border-radius:5px;margin-left:5px;color:white;background-color:#199CF9" class="organization_search">查询</button>
+                    </div>
+                    <table class="table mb-0" style="font-size:10px;border:1px solid #d0ccd0;height:30px" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>选择框</th>
+                                <th>名称</th>
+                                <th>编码</th>
+                                <th>联系人</th>
+                                <th>电话</th>
+                                <th>电子邮箱</th>
+                                <th>生日</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:10px;overflow:auto;" class="organization_body"></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn-organization-check">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--订单号选择父件的模态框-->
+    <div class="modal fade" id="longc-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="margin-top:100px;width:100%;height:100%">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="width:1200px;height:800px;margin-left:-200px;overflow:hidden">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalCenterTitle2">订单号查询</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="margin-top:-10px;border:2px solid #DDDDDD;overflow:scroll">
+                    <div style="margin-bottom:15px">
+                        <!--<input type="date" /> - <input type="date" />-->
+                        <input type="text" style="width:180px;height:35px" class="btn_select_one" />
+                        <input type="date" class="time_query_go" style="background-color:#CDCDCD"/>—
+                        <input type="date" class="time_query_end" style="background-color:#CDCDCD" />
+                        <button type="button" class="btn_sel" style="border:none;border-radius:5px;margin-left:5px;color:white;background-color:#199CF9">查询</button>
+                        <!--<button type="button" style="border:none;border-radius:5px;margin-left:5px;color:white;background-color:#199CF9">高级查询</button>-->
+                    </div>
+                    <table class="table mb-0" style="font-size:10px;border:1px solid #d0ccd0;height:30px" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>选择框</th>
+                                <th>订单号</th>
+                                <th>日期</th>
+                                <th>成品名称</th>
+                                <th>成品编码</th>
+                                <th>规格型号</th>
+                                <th>客户</th>
+                                <th>订单数量</th>
+                                <th>未税售价</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:10px;overflow-y:scroll" class="order_modal"></tbody>
+                    </table>
+                    <!--<hr />
+                    <div class="wrapper">
+                        <div class="items">
+                            <ul id="content"></ul>
+                        </div>
+                        <span class="btn">
+                            <a id="pre_page">上一页</a>
+                            <span>
+                                <span id="current_page">1</span>
+                                <span>/</span>
+                                <span id="total_page"></span>
+                            </span>
+                            <a id="next_page">下一页</a>
+                        </span>
+                    </div>
+                    <hr />-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn_true">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--成品代码的模态框-->
+    <div class="modal fade" id="longc-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="margin-top:100px;width:100%;height:100%">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="width:1200px;height:800px;margin-left:-200px">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalCenterTitle2">选择父件</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="margin-top:-10px;border:2px solid #DDDDDD;overflow:scroll">
+                    <div style="margin-bottom:15px">
+                        <input type="text" style="width:180px;height:35px" class="product_string" />
+                        <button type="submit" style="border:none;border-radius:5px;margin-left:5px;color:white;background-color:#199CF9" class="product_search">查询</button>
+                    </div>
+                    <table class="table mb-0" style="font-size:10px;border:1px solid #d0ccd0;height:30px" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>选择框</th>
+                                <th>类型</th>
+                                <th>成品名称</th>
+                                <th>规格型号</th>
+                                <th>成品编码</th>
+                                <th>最新未税单价</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:10px;overflow:auto;" class="product_body"></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn-product-check">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新增替料模态框-->
+    <div class="modal fade" id="longc-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="margin-top:50px;width:100%;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="width:1200px;height:800px;margin-left:-200px">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalCenterTitle2" style="display:block;font-size:20px;font-weight:bold">新增替料</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="margin-top:-10px;border:2px solid #DDDDDD;overflow:scroll;width:100%;overflow:hidden">
+                    <ul style="width:100%;overflow:hidden" class="ui_class">
+                        <li>物料属性：<input type="text" class="shuxing" /></li>
+                        <li>物料编码：<input type="text" class="bianma" /></li>
+                        <li>物料名称：<input type="text" class="mincheng" /></li>
+                        <li>规格型号：<input type="text" class="xinhao" /></li>
+                        <li>单位用量：<input type="text" class="yongliang" /></li>
+                        <li>良率%：<input type="text" class="lianglv" /></li>
+                        <li>最新单价：<input type="text" class="danjia" /></li>
+                        <li>税率%：<input type="text" class="shuilv" /></li>
+                        <li>含税单价：<input type="text" class="hanshui" /></li>
+                        <li>确认材料成本：<input type="text" class="chengben" /></li>
+                    </ul>
+                    <div class="modal_bodytwo" style="margin-top:200px;">
+                        <div style="margin-bottom:5px">
+                            <input type="text" style="height:30px;background-color:#8AAEDB" class="asp_btn" />&emsp;
+                            <button type="button" class="btn-primary query_btn_product_one" id="btn_mk" style="width:50px;height:30px;padding:0">查询</button>
+                        </div>
+                        <table class="table mb-6" style="font-size:10px;border:1px solid #d0ccd0;height:30px;text-align:center" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr style="text-align:center">
+                                    <th><input type="radio" class="select_one" /></th>
+                                    <th style="width:80px">物料类型</th>
+                                    <th>物料名称</th>
+                                    <th>规格型号</th>
+                                    <th>成品编码</th>
+                                    <th>最新未税单价</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size:10px;overflow:auto;overflow-y:scroll;width:100%;text-align:center" class="product_body_modal"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer" style="height:50px">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn_select_modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide Setting Box -->
+    <!-- Script Start -->
+    <script src="static/js/jquery.min.js"></script>
+    <!--<script src="static/js/popper.min.js"></script>-->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/data_times.js"></script>
+    <script src="static/js/json_Excel.js"></script>
+    <script>
+        let url = "ashx/bom_prcing.ashx";
+        let json_data = {};
+        let search = "";
+        let shtml = "";
+        let organization_data = {};
+        let number_data = {};
+        let bom_data = {};
+        let p_data = {};
+        var sel_ok_arr = {};
+        var totl = 0;
+        let order_data = {};
+        let new_json_data = {};
+        let tl_data = {};
+
+
+        
+        
+
+
+        //加密测试
+        $("#asnkkh").click(function () {
+            let asdc = $(".sadhnzxcn").val();
+            $(".xcbva").val("");
+            $.post(url, { "action": "zdxfbsrthwr", "asdc": asdc }, function (data) {
+                console.log(data);
+                $(".xcbva").val(data);
+            })
+        })
+        //解密测试
+        $("#acgqwe").click(function () {
+            let asdc = $(".xcbva").val();
+            $.post(url, { "action": "sfghjwrtw", "asdc": asdc }, function (data) {
+                console.log(data);
+                $(".asdcwe").val(data);
+            })
+        })
+        
+
+    </script>
+
+
+
+
+</body>
+</html>

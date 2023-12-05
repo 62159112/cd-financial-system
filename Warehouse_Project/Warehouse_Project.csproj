@@ -1,0 +1,297 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72445E6B-DD7B-4A73-92D6-33CA79BDA9A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Warehouse_Project</RootNamespace>
+    <AssemblyName>Warehouse_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pricing.html" />
+    <Content Include="static\css\auth.css" />
+    <Content Include="static\css\bootstrap.min.css" />
+    <Content Include="static\css\calender.css" />
+    <Content Include="static\css\css2.css" />
+    <Content Include="static\css\datatables.css" />
+    <Content Include="static\css\font-awesome.min.css" />
+    <Content Include="static\css\fonts.css" />
+    <Content Include="static\css\icofont.min.css" />
+    <Content Include="static\css\jqvmap.min.css" />
+    <Content Include="static\css\nice-select.css" />
+    <Content Include="static\css\range.css" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\css\swiper.min.css" />
+    <Content Include="static\css\theme.css" />
+    <Content Include="static\font\font_0mienbyc1ov\demo.css" />
+    <Content Include="static\font\font_0mienbyc1ov\demo_index.html" />
+    <Content Include="static\font\font_0mienbyc1ov\iconfont.css" />
+    <Content Include="static\font\font_0mienbyc1ov\iconfont.js" />
+    <Content Include="static\image\auth-bg.png" />
+    <Content Include="static\image\o_icon.png" />
+    <Content Include="static\image\o_icon2.png" />
+    <Content Include="static\image\o_icon3.png" />
+    <Content Include="static\image\sad.png" />
+    <Content Include="static\image\sort_asc.png" />
+    <Content Include="static\image\sort_both.png" />
+    <Content Include="static\image\tws.png" />
+    <Content Include="static\image\tws_70.png" />
+    <Content Include="static\js\apexcharts.min.js" />
+    <Content Include="static\js\bootstrap.min.js" />
+    <Content Include="static\js\calendar.min.js" />
+    <Content Include="static\js\ckeditor.js" />
+    <Content Include="static\js\control-chart-apexcharts.js" />
+    <Content Include="static\js\custom.js" />
+    <Content Include="static\js\datatables.min.js" />
+    <Content Include="static\js\dataTables.responsive.min.js" />
+    <Content Include="static\js\data_times.js" />
+    <Content Include="static\js\jquery.appear.js" />
+    <Content Include="static\js\jquery.countTo.js" />
+    <Content Include="static\js\jquery.min.js" />
+    <Content Include="static\js\jquery.vmap.min.js" />
+    <Content Include="static\js\jquery.vmap.sampledata.js" />
+    <Content Include="static\js\jquery.vmap.world.js" />
+    <Content Include="static\js\JsBarcode.all.js" />
+    <Content Include="static\js\json_Excel.js" />
+    <Content Include="static\js\nice-select.min.js" />
+    <Content Include="static\js\popper.min.js" />
+    <Content Include="static\js\range.js" />
+    <Content Include="static\js\script.js" />
+    <Content Include="static\js\swiper.min.js" />
+    <Content Include="static\js\tag.js" />
+    <Content Include="static\js\tagging.min.js" />
+    <Content Include="static\picture\1.jpg" />
+    <Content Include="static\picture\2.jpg" />
+    <Content Include="static\picture\3.jpg" />
+    <Content Include="static\picture\4.jpg" />
+    <Content Include="static\picture\7.jpg" />
+    <Content Include="static\picture\auth-img1.png" />
+    <Content Include="static\picture\carousal1.jpg" />
+    <Content Include="static\picture\carousal2.jpg" />
+    <Content Include="static\picture\carousal3.jpg" />
+    <Content Include="static\picture\carousal4.jpg" />
+    <Content Include="static\picture\carousal5.jpg" />
+    <Content Include="static\picture\carousal6.jpg" />
+    <Content Include="static\picture\carousal7.jpg" />
+    <Content Include="static\picture\carousal8.jpg" />
+    <Content Include="static\picture\carousal9.jpg" />
+    <Content Include="static\picture\error.png" />
+    <Content Include="static\picture\loader.gif" />
+    <Content Include="static\picture\logo.png" />
+    <Content Include="static\picture\logo2.png" />
+    <Content Include="static\picture\p1.png" />
+    <Content Include="static\picture\p2.png" />
+    <Content Include="static\picture\p3.png" />
+    <Content Include="static\picture\p4.png" />
+    <Content Include="static\picture\p5.png" />
+    <Content Include="static\picture\p6.png" />
+    <Content Include="static\picture\p7.png" />
+    <Content Include="static\picture\p8.png" />
+    <Content Include="static\picture\pro1.jpg" />
+    <Content Include="static\picture\pro2.jpg" />
+    <Content Include="static\picture\pro3.jpg" />
+    <Content Include="static\picture\product.png" />
+    <Content Include="static\picture\product2.png" />
+    <Content Include="static\picture\product3.png" />
+    <Content Include="static\picture\product4.png" />
+    <Content Include="static\picture\thumb1.png" />
+    <Content Include="static\picture\thumb2.png" />
+    <Content Include="static\picture\thumb3.png" />
+    <Content Include="static\picture\thumb4.png" />
+    <Content Include="static\picture\tws.png" />
+    <Content Include="static\picture\tws_70.png" />
+    <Content Include="static\picture\user.jpg" />
+    <Content Include="static\picture\user1.png" />
+    <Content Include="static\picture\user2.png" />
+    <Content Include="static\picture\user3.jpg" />
+    <Content Include="static\picture\user4.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ashx\bom_prcing.ashx.cs">
+      <DependentUpon>bom_prcing.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ashx\bom_prcing.ashx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="static\font\fa-brands-400.woff2" />
+    <Content Include="static\font\fa-regular-400.woff2" />
+    <Content Include="static\font\fa-solid-900.woff2" />
+    <Content Include="static\font\font_0mienbyc1ov\iconfont.json" />
+    <Content Include="static\font\font_0mienbyc1ov\iconfont.ttf" />
+    <Content Include="static\font\icofont.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fBBc4.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fBBc4.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfBBc4.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfBBc4.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfBxc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfCBc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2" />
+    <Content Include="static\font\KFOlCnqEu92Fr1MmYUtfCxc4EsA.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu4mxK.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu4WxKOzY.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu5mxKOzY.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu72xKOzY.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu7GxKOzY.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu7mxKOzY.woff2" />
+    <Content Include="static\font\KFOmCnqEu92Fr1Mu7WxKOzY.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" />
+    <Content Include="static\font\pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" />
+    <Content Include="static\font\pxiEyp8kv8JHgFVrJJbecmNE.woff2" />
+    <Content Include="static\font\pxiEyp8kv8JHgFVrJJfecg.woff2" />
+    <Content Include="static\font\pxiEyp8kv8JHgFVrJJnecmNE.woff2" />
+    <Content Include="static\font\pxiGyp8kv8JHgFVrLPTucHtA.woff2" />
+    <Content Include="static\font\pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2" />
+    <Content Include="static\font\pxiGyp8kv8JHgFVrLPTufntAKPY.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14123</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14123/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
