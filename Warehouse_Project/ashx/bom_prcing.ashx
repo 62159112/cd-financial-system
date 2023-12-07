@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="bom_prcing.ashx.cs" Class="MES_SYSTEM.ashx.bom_prcing" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="bom_prcing.ashx.cs" Class="Warehouse_Project.ashx.bom_prcing" %>

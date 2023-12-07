@@ -71,6 +71,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="transport_history.html" />
+    <Content Include="order_form.html" />
+    <Content Include="static\js\jquery.cookie.js" />
+    <Content Include="static\js\JsBarcode.all.min.js" />
+    <Content Include="static\js\qrcode.js" />
+    <Content Include="transport.html" />
+    <Content Include="form.html" />
     <Content Include="pricing.html" />
     <Content Include="static\css\auth.css" />
     <Content Include="static\css\bootstrap.min.css" />
@@ -174,10 +181,14 @@
     <Compile Include="ashx\bom_prcing.ashx.cs">
       <DependentUpon>bom_prcing.ashx</DependentUpon>
     </Compile>
+    <Compile Include="ashx\sp_order.ashx.cs">
+      <DependentUpon>sp_order.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ashx\bom_prcing.ashx" />
+    <Content Include="ashx\sp_order.ashx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="static\font\fa-brands-400.woff2" />
@@ -255,7 +266,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MES_DAL\MES_DAL.csproj">
+      <Project>{ceee84a1-0347-46cc-9d98-d12011df2d10}</Project>
+      <Name>MES_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

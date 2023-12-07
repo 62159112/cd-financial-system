@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MES_SYSTEM.ashx
+namespace Warehouse_Project.ashx
 {
     /// <summary>
     /// bom_prcing 的摘要说明
